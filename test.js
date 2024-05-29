@@ -35,5 +35,5 @@ test("One yen should be 0.0056 pounds", function() {
     const { fromYenToPound } = require('./app.js');
     const pounds = fromYenToPound(400);
     const expectedYtoP = 400*0.0056;
-    expect(fromDollarToYen(400)).toBe(2.24); // 1 yen son 0.0056 pounds, entonces 400 yens deberían ser = (400*0.0056)
+    expect(fromYenToPound(400)).toBe(2.24); // 1 yen son 0.0056 pounds, entonces 400 yens deberían ser = (400*0.0056)
 })

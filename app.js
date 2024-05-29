@@ -8,12 +8,12 @@ const fromEuroToDollar = function(valueInEuro) {
 //facrtor de conversion Dolar a Yen es 156.5/1.07=146.26
 const fromDollarToYen = function (valueInDollar) {
     let valueInYen = valueInDollar*146.26
-    return valueInYen.toFixed(2);
+    return +valueInYen.toFixed(2);
 }
 //factor de conversion Yen a Libra es 0.87/156.5=0.0056
 const fromYenToPound = function (valueInYen) {
     let valueInPound = valueInYen*0.0056
-    return valueInPound.toFixed(2);
+    return +valueInPound.toFixed(2);
 }
 
 // Esta es mi función que suma dos números
